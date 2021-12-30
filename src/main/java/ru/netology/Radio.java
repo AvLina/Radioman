@@ -6,9 +6,19 @@ public class Radio {
     private int currentVolume;
     private int maxStation = 9;
     private int minStation = 0;
-    private int maxVolume = 10;
+    private int maxVolume = 100;
     private int minVolume = 0;
     private boolean on;
+
+    public Radio() {
+        this.maxStation = maxStation;
+        this.minStation = minStation;
+    }
+
+    public Radio(int maxStation, int minStation) {
+        this.maxStation = maxStation;
+        this.minStation = minStation;
+    }
 
     public boolean isOn() {
         return on;
